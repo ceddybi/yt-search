@@ -140,7 +140,7 @@ function writeTofile(videoId, data) {
 function parseResponse(responseText, callback) {
   // var _time = Date.now();
 
-  writeTofile(Date.now(), responseText);
+  // writeTofile(Date.now(), responseText);
 
   const $ = _cheerio.load(responseText)
   // var _delta = Date.now() - _time;
