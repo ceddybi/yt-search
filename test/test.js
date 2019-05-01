@@ -1,8 +1,8 @@
 let yts = require( '../src/index.js' )
 
-if ( !!process.env.production ) {
-  yts = require( '../dist/yt-search.min.js' )
-}
+// if ( !!process.env.production ) {
+//   yts = require( '../dist/yt-search.min.js' )
+// }
 
 const test = require( 'tape' )
 
@@ -24,7 +24,7 @@ test( 'basic search', function ( t ) {
         song.views > ( 100 * 1000 )
       )
 
-      // console.log( song )
+      console.log( song )
 
       return keep
     } )[ 0 ]
